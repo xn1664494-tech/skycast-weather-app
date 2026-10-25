@@ -1,11 +1,8 @@
-# ☀️ SkyCast — Ứng dụng dự báo thời tiết
+# ☀️SkyCast — Ứng dụng dự báo thời tiết
 
-SkyCast là một ứng dụng web hiển thị thông tin thời tiết trực quan, được xây dựng bằng HTML, CSS và JavaScript thuần. Dự án tập trung vào việc tạo ra một giao diện người dùng (UI) đẹp mắt, hiện đại với các hiệu ứng kính mờ (glassmorphism) và hoạt ảnh mượt mà.
+**URL dự án:** [https://xn1664494-tech.github.io/skycast-weather-app/](https://xn1664494-tech.github.io/skycast-weather-app/)
 
-## 🌐 Xem trước (Live Demo)
-Bạn có thể xem trực tiếp ứng dụng đang chạy tại đây:
-Project URL: https://github.com/xn1664494-tech/skycast-weather-app
-Live Demo: https://xn1664494-tech.github.io/skycast-weather-app/
+**GitHub Repository:** [https://github.com/xn1664494-tech/skycast-weather-app](https://github.com/xn1664494-tech/skycast-weather-app)
 
 ## ✨ Tính năng chính
 - **Tìm kiếm thời tiết:** Nhập tên thành phố để lấy dữ liệu thời tiết theo thời gian thực.
