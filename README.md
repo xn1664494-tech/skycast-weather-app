@@ -4,7 +4,7 @@ SkyCast là một ứng dụng web hiển thị thông tin thời tiết trực 
 
 ## 🌐 Xem trước (Live Demo)
 Bạn có thể xem trực tiếp ứng dụng đang chạy tại đây:
-👉 https://github.com/xn1664494-tech/skycast-weather-app
+👉 [https://github.com/xn1664494-tech/skycast-weather-app](https://xn1664494-tech.github.io/skycast-weather-app/)
 
 ## ✨ Tính năng chính
 - **Tìm kiếm thời tiết:** Nhập tên thành phố để lấy dữ liệu thời tiết theo thời gian thực.
