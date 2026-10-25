@@ -2,8 +2,7 @@
 
 **URL dự án:** [https://xn1664494-tech.github.io/skycast-weather-app/](https://xn1664494-tech.github.io/skycast-weather-app/)
 
-**GitHub Repository:** [https://github.com/xn1664494-tech/skycast-weather-app](https://github.com/xn1664494-tech/skycast-weather-app)
-
+https://roadmap.sh/projects/weather-api-wrapper-service
 ## ✨ Tính năng chính
 - **Tìm kiếm thời tiết:** Nhập tên thành phố để lấy dữ liệu thời tiết theo thời gian thực.
 - **Thông tin chi tiết:** Hiển thị nhiệt độ hiện tại, cảm giác như, độ ẩm, tốc độ gió, chỉ số UV và tầm nhìn.
