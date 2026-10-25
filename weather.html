@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkyCast — Thời tiết hôm nay</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Công tắc đổi đơn vị nhiệt độ, thuần CSS bằng :has() -->
+    <input type="checkbox" id="unit-toggle" class="unit-toggle" hidden />
+
+    <div class="bg-orbs" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="page">
+      <header class="topbar">
+        <a class="brand" href="#">
+          <span class="brand__icon" aria-hidden="true">☀</span>
+          <span>SkyCast</span>
+        </a>
+
+        <form class="search" id="search-form" role="search">
+          <span class="search__icon" aria-hidden="true">⌕</span>
+          <input
+            type="search"
+            id="search-input"
+            name="city"
+            placeholder="Tìm thành phố…"
+            aria-label="Tìm thành phố"
+            autocomplete="off"
+          />
+          <button type="submit" class="search__btn" aria-label="Tìm kiếm">
+            Tìm
+          </button>
+        </form>
+        <label
+          class="unit-switch"
+          for="unit-toggle"
+          aria-label="Đổi đơn vị nhiệt độ"
+        >
+          <span class="unit-switch__track">
+            <span class="unit-switch__opt">°C</span>
+            <span class="unit-switch__opt">°F</span>
+            <span class="unit-switch__knob" aria-hidden="true"></span>
+          </span>
+        </label>
+      </header>
+
+      <main>
+        <!-- Thời tiết hiện tại -->
+        <section class="hero card">
+          <div class="hero__info">
+            <p class="eyebrow"></p>
+            <h1 class="city">
+              <span class="city__pin" aria-hidden="true">📍</span>
+            </h1>
+
+            <div class="temp-row">
+              <span class="temp">
+                <span class="u-c">Chưa nhập thành phố</span
+                ><span class="u-f">75</span><span class="temp__deg">°</span>
+              </span>
+              <span class="temp-side">
+                <strong>Sky</strong>
+                <span
+                  >Cảm giác như <span class="u-c"></span
+                  ><span class="u-f">79°</span></span
+                >
+              </span>
+            </div>
+
+            <p class="hi-lo">
+              Cao <span class="u-c">27°</span><span class="u-f">81°</span>
+              <span class="dot">·</span>
+              Thấp <span class="u-c">21°</span><span class="u-f">70°</span>
+            </p>
+
+            <ul class="chips">
+              <li>🌧️</li>
+              <li>💨</li>
+              <li>💧</li>
+            </ul>
+          </div>
+
+          <!-- Minh hoạ thời tiết vẽ hoàn toàn bằng CSS -->
+          <div class="hero__art" aria-hidden="true">
+            <div class="sun"></div>
+            <div class="cloud cloud--small"></div>
+            <div class="cloud cloud--big"></div>
+            <div class="cloud cloud--tiny"></div>
+          </div>
+        </section>
+
+        <!-- Chỉ số nhanh -->
+        <section class="stats" aria-label="Chỉ số thời tiết">
+          <article class="stat card">
+            <span class="stat__icon stat__icon--blue">💧</span>
+            <div>
+              <p class="stat__label">Độ ẩm</p>
+              <p class="stat__value" id="stat-humidity">68%</p>
+              <p class="stat__note" id="stat-humidity-note">Dễ chịu</p>
+            </div>
+          </article>
+
+          <article class="stat card">
+            <span class="stat__icon stat__icon--mint">🌬️</span>
+            <div>
+              <p class="stat__label">Gió</p>
+              <p class="stat__value" id="stat-wind">12 <small>km/h</small></p>
+              <p class="stat__note" id="stat-wind-note">Hướng Đông Bắc</p>
+            </div>
+          </article>
+
+          <article class="stat card">
+            <span class="stat__icon stat__icon--amber">☀️</span>
+            <div>
+              <p class="stat__label">Chỉ số UV</p>
+              <p class="stat__value" id="stat-uv">4</p>
+              <p class="stat__note" id="stat-uv-note">Trung bình</p>
+            </div>
+          </article>
+
+          <article class="stat card">
+            <span class="stat__icon stat__icon--violet">👁️</span>
+            <div>
+              <p class="stat__label">Tầm nhìn</p>
+              <p class="stat__value" id="stat-visibility">
+                10 <small>km</small>
+              </p>
+              <p class="stat__note" id="stat-visibility-note">Rất trong</p>
+            </div>
+          </article>
+        </section>
+
+        <footer class="footer">
+          <p>
+            Thiết kế minh hoạ · HTML &amp; CSS thuần, không dùng JavaScript.
+          </p>
+        </footer>
+
+        <script src="./fetchApi.js"></script>
+      </main>
+    </div>
+  </body>
+</html>
