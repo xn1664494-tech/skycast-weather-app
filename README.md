@@ -24,5 +24,4 @@ Bạn có thể xem trực tiếp ứng dụng đang chạy tại đây:
 Nếu bạn muốn tải mã nguồn về và chạy thử trên máy tính của mình, hãy làm theo các bước sau:
 
 1. **Clone kho lưu trữ này về máy:**
-   ```bash
-   git clone https://github.com/[TEN_TAI_KHOAN]/[TEN_KHO_LUU_TRU].git
+   https://github.com/xn1664494-tech/skycast-weather-app.git
